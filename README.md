@@ -98,6 +98,33 @@ instance.balanceOf(accounts[1]).then(b => b.toNumber())
 instance.burn(accounts[0], 1)
 ```
 
+# Using truffle console to connect to Nightfall
+If you want to connect the truffle console to Nightfall's ganache instance, change into the zkp directory and create a `truffle-config.js` file that contains this:
+
+```
+module.exports = {
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 8545,
+      network_id: "*" // Match any network id
+    }
+  }
+};
+```
+
+Then connect to the deployed contract:
+
+```
+truffle(development)> let instance = await FToken.new()
+undefined
+truffle(development)> instance.name()
+'EY OpsCoin'
+truffle(development)>^d
+```
+
+(press control-d to quit out of the truffle console)
+
 # Using python scripts
 Created some python scripts to connecto to ganache. Just learning how to do it. Probable better ways.
 
