@@ -1,6 +1,6 @@
 ## README.md
 
-Random stuff about working with ganache, truffle, python and nightfall. 
+Random stuff about working with [Ganache](https://www.trufflesuite.com/docs/ganache/quickstart), [Truffle](https://www.trufflesuite.com/docs/truffle/overview), python and [Nightfall](https://github.com/EYBlockchain/nightfall).
 
 # Setup python environment:
 
@@ -9,6 +9,7 @@ virtualenv -p python3 venv
 source venv/bin/activate
 pip install web3
 python --version
+# when done with virtual environment, run "deactivate"
 ```
 
 # Use python environment to connect to ganache
