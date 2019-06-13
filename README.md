@@ -35,11 +35,11 @@ truffle compile
 truffle migrate
 ```
 
-# Create MikeToken
+# Create MikeCoin
 
 ```
-mkdir MikeToken
-cd MikeToken
+mkdir MikeCoin
+cd MikeCoin
 truffle init
 npm init
 npm install truffle
